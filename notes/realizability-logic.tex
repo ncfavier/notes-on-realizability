@@ -29,7 +29,7 @@ Categorical logic teaches us that the essential characteristic of the quantifier
 \section{Realizability predicates}
 \label{sec:realizability-predicates}
 
-In a category a predicate on an object $S$ is represented by a mono with codomain~$S$. These form a preorder, where $u : T \monoto S$ is below $t : U \monoto S$, written $u \leq t$ or somewhat less precisely $U \leq T$, whhen $u$ factors through $t$, i.e., there exists a morphism $f : U \to T$ such that
+In a category a predicate on an object $S$ is represented by a mono with codomain~$S$. These form a preorder, where $u : T \monoto S$ is below $t : U \monoto S$, written $u \leq t$ or somewhat less precisely $U \leq T$, when $u$ factors through $t$, i.e., there exists a morphism $f : U \to T$ such that
 %
 \begin{equation*}
   \xymatrix{
@@ -59,10 +59,10 @@ However, rather than working with the Heyting prealgebra of monos, we shall repl
   map $p : \S{S} \to \pow{\Atyp{\T{p}}}$.
 \end{definition}
 
-It is customary to write $\R{r} \rz p x$ instead of $\R{r} \in p x$ and to read this as ``$\R{r}$ realizes $p x$''. Realizability predicates are more informative than Boolean predicates. The latter only express truth and falshood, whereas the former provide \emph{computatational evidence} for validity of statements.
+It is customary to write $\R{r} \rz p x$ instead of $\R{r} \in p x$ and to read this as ``$\R{r}$ realizes $p x$''. Realizability predicates are more informative than Boolean predicates. The latter only express truth and falsehood, whereas the former provide \emph{computational evidence} for validity of statements.
 
 The set $\Pred{S} = \pow{\Atyp{\T{p}}}^{\S{S}}$ of all realizability predicates on~$S$ is a preorder for the \defemph{entailment} relation~$\entails$, defined as follows. Given  $p, q \in \Pred{S}$, we define $p \entails q$ to hold when there exists $\R{i} \in \subAtyp{\T{S} \to \T{p} \to \T{q}}$ such that whenever $\R{x} \rz[S] x$ and $\R{r} \rz p x$ then $\defined{\R{i}\,\R{x}\,\R{r}}$ and $\R{i}\,\R{x}\,\R{r} \rz q x$.
-Thus, $\R{i}$ converts computational evidence of $p x$ to computational evidence of~$q x$. Note that $\R{i}$ recieves as input both a realizer for~$x$ and the evidence of~$p x$.
+Thus, $\R{i}$ converts computational evidence of $p x$ to computational evidence of~$q x$. Note that $\R{i}$ receives as input both a realizer for~$x$ and the evidence of~$p x$.
 
 \begin{exercise}
   Verify that $\entails$ is reflexive and transitive.
@@ -85,7 +85,7 @@ Thus, $\R{i}$ converts computational evidence of $p x$ to computational evidence
   The subset inclusion $\S{S_p} \subseteq \S{S}$ is realized by $\combFst$.
   The corresponding assembly map $i_p : S_p \to S$ is called the \defemph{extension} of~$p$.
 
-  It is easy to check that $p \entails q$ is equuvalent to $i_p \leq i_q$, therefore the assignment $p \mapsto S_p$ consistutes a monotone embedding $\Pred{S} \to \Mono{S}$.
+  It is easy to check that $p \entails q$ is equivalent to $i_p \leq i_q$, therefore the assignment $p \mapsto S_p$ constitutes a monotone embedding $\Pred{S} \to \Mono{S}$.
   We still have to show that it is essentially surjective, i.e., that every mono
   $u : U \monoto S$, realized by $\R{u}$, is equivalent to the extension of a predicate.
   %
@@ -658,7 +658,7 @@ For a specific choices of two-element assemblies we obtain known classes of pred
 \begin{proof}
   Let us show that $\nabla \two$ classifies the classical predicates on an assembly~$S$.
   %
-  Given an assembly map $f : S \to \nabla \two$, defined $p_f \in \Pred{S}$ by $\T{p_f} = \unit$ and
+  Given an assembly map $f : S \to \nabla \two$, define $p_f \in \Pred{S}$ by $\T{p_f} = \unit$ and
   % 
   \begin{equation*}
     \R{r} \rz p_f x

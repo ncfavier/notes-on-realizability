@@ -406,7 +406,7 @@ These are indeed just the familiar set-theoretic constructions embellished with 
 \subsection{Contexts of assemblies}
 \label{sec:contexts-assemblies}
 
-Contexts of assemblies are built as iterated sums, the same was as contexts of sets.
+Contexts of assemblies are built as iterated sums, the same way as contexts of sets.
 Thus a telescope of assemblies
 %
 \begin{equation*}
@@ -428,7 +428,7 @@ where $\pcacomb{proj}_{n,i}$ is the $i$-th projection from an $n$-tuple.
 \section{Propositions as assemblies}
 \label{sec:prop-as-assemblies}
 
-In \cref{example:context} we placed a hypothesis into the context, but for this to make sense in needs to be a type family. How can a proposition be a type?
+In \cref{example:context} we placed a hypothesis into the context, but for this to make sense it needs to be a type family. How can a proposition be a type?
 
 In classical logic a predicate $\phi$ on a set~$A$ is a Boolean function $\phi : S \to \{\bot, \top\}$. If we encode the truth values $\bot$ and $\top$ with sets, $\phi$ becomes a family of sets, which is what we want. A choice that works well is to take~$\bot$ to be~$\emptyset$ and~$\top$ to be~$\set{\star}$. An even better idea is to allow any singleton set to represent truth, they are all isomorphic anyhow. We may do the same with assemblies.
 
@@ -553,7 +553,7 @@ Like any worthy construction, propositional truncation has a universal property 
 \subsection{Realizability predicates and propositions}
 \label{sec:real-pred-prop}
 
-In \cref{cha:realizability-logic} we gave a realizability interpretation of logic, with its own notions of propositions and predicates. We show that it is equivalent to truncated logic of the present chapter.
+In \cref{cha:realizability-logic} we gave a realizability interpretation of logic, with its own notions of propositions and predicates. We show that it is equivalent to the truncated logic of the present chapter.
 
 Let $\PredT{S}$ be the class of predicates on~$S$ in the sense of the present chapter, i.e., families of assemblies $P \in \Fam{S}$ such that $\all{u, v \in \S{P x}} u = v$ for all $x \in \S{S}$. We endow $\PredT{S}$ with a preorder $\entails'$, defined by
 %
@@ -595,7 +595,7 @@ In fact, there is at most one map of families $P \to Q$.
 \end{proof}
 
 \begin{exercise}
-  In the proof of \cref{thm:pred-equiv-pred} the passage from $P$ to realizability predicate $p_P$ works for an arbitrary family~$P \in \Fam{S}$. Therefore, the equivalence extends to a pair of functors
+  In the proof of \cref{thm:pred-equiv-pred} the passage from $P$ to the realizability predicate $p_P$ works for an arbitrary family~$P \in \Fam{S}$. Therefore, the equivalence extends to a pair of functors
   %
   \begin{equation*}
     \xymatrix{
