@@ -4,7 +4,7 @@
 If you open a book on computability theory, chances are that you will find a statement saying that ``models of computation are equivalent''. The claim refers to a collection of specific models of computation, such as variations of Turing machines, $\lambda$-calculi, and recursive functions. The book supports the claim by describing simulations between such models, with varying degrees of detail, after which it hurries on to core topics of computability theory. An opportunity is missed to ask about a general notion of simulation, and a study of its structural properties.
 
 
-We seize the opportunity and study a notion of simulation between pcas. An excellent one is John Longley's \emph{applicative morphism}~\sidecite{Longley:94}. His definition extends easily to account for pcas with sub-pcas. We dare rename applicative morphisms to \emph{simulations}, and consider only the untyped simulations. The typed version of simulations can also be set up as well, see~\sidecite{longley99:_match}.
+We seize the opportunity and study a notion of simulation between pcas. An excellent one is John Longley's \emph{applicative morphism}~\sidecite{Longley:95}. His definition extends easily to account for pcas with sub-pcas. We dare rename applicative morphisms to \emph{simulations}, and consider only the untyped simulations. The typed version of simulations can also be set up as well, see~\sidecite{longley99:_match}.
 
 \begin{definition}
   \label{def:simulation}%
@@ -13,7 +13,7 @@ We seize the opportunity and study a notion of simulation between pcas. An excel
   \indexdef{applicative!morphism}%
   \indexdef{simulation}%
   %
-  A \defemph{(pca) simulation}, originally called an \defemph{applicative morphism}~\cite{Longley:94},
+  A \defemph{(pca) simulation}, originally called an \defemph{applicative morphism}~\cite{Longley:95},
   $\rho: \EE \pcato \FF$ between pcas~$\EE$ and~$\FF$ is a total relation $\rho
   \subseteq \EE \times \FF$ for which there exists a \defemph{realizer} $r \in \FF$
   %
@@ -205,7 +205,7 @@ We recall several basic results of John Longley's.
 \end{theorem}
 
 \begin{proof}
-  See \cite[Theorem 2.5.3]{Longley:94}.
+  See \cite[Theorem 2.5.3]{Longley:95}.
 \end{proof}
 
 \begin{corollary}
@@ -215,7 +215,7 @@ We recall several basic results of John Longley's.
 \end{corollary}
 
 \begin{proof}
-  Immediate. This is~\cite[Corollary 2.5.4]{Longley:94}.
+  Immediate. This is~\cite[Corollary 2.5.4]{Longley:95}.
 \end{proof}
 
 \begin{corollary}
@@ -250,7 +250,7 @@ Turing machines, embodied as Kleene's first algebra~$\klone$, are distinguished 
 \end{theorem}
 
 \begin{proof}
-  We sketch the proof from \cite[Theorem 2.4.18]{Longley:94}. Given any pca~$\AA$, define $\kappa : \klone \pcato \AA$ by $\kappa[n] = \set{\numeral{n}_{\AA}}$. Because every partial computable function $\NN \times \NN \parto \NN$ can be represented in~$\AA$, there is $r \in \AA$ such that, for all $k, m, n \in \NN$,
+  We sketch the proof from \cite[Theorem 2.4.18]{Longley:95}. Given any pca~$\AA$, define $\kappa : \klone \pcato \AA$ by $\kappa[n] = \set{\numeral{n}_{\AA}}$. Because every partial computable function $\NN \times \NN \parto \NN$ can be represented in~$\AA$, there is $r \in \AA$ such that, for all $k, m, n \in \NN$,
   %
   \begin{equation*}
     r \, \numeral{k} \, \numeral{m} = \numeral{n} \iff \pr{k}{m} = n.
@@ -272,7 +272,7 @@ Recall that a \defemph{Turing reduction} of $A \subseteq \NN$ to $B \subseteq \N
 \end{theorem}
 
 \begin{proof}
-  This is \cite[Proposition 3.1.6]{Longley:94}.
+  This is \cite[Proposition 3.1.6]{Longley:95}.
 \end{proof}
 
 The following definition and exercise verify that having decidable simulations between~$\EE$ and~$\FF$ implies that they both compute the same number-theoretic functions, which is sometimes taken to be a notion of equivalence of computational models.
@@ -341,7 +341,7 @@ Verifying $\delta \circ \gamma \preceq \id[\Lambda]$ is a simple matter of progr
 
 \index{retraction!between P and N@{between~$\comp{\Scott}$ and~$\klone$}}%
 %
-Here is one more example, an adjoint retraction from the computable graph model~$\comp{\Scott}$ and the first Kleene algebra~\cite[Proposition 3.3.7]{Longley:94}.
+Here is one more example, an adjoint retraction from the computable graph model~$\comp{\Scott}$ and the first Kleene algebra~\cite[Proposition 3.3.7]{Longley:95}.
 %
 In one direction we define $\delta: \klone \pcato \comp{\Scott}$ by
 %
